@@ -7,12 +7,13 @@
  * 
 """
 
+from curses.ascii import isdigit
 import os
 import re
 if __name__ != '__main__':
     from fssearch.format_number import format_number_kilo_by_kilo
 
-__version_code = '1.1.0' # version code
+__version_code = '1.2.0' # version code
 
 def version():
     return __version_code
@@ -23,19 +24,20 @@ def search_dir(reg_ex, parent_path) -> tuple[int, int]:
     file_system_objects = sorted(os.listdir(parent_path))
     
     for obj in file_system_objects:
+        obj_path = os.path.join(parent_path, obj)
         if re.search(reg_ex, obj):
             _line = ''
-            obj_path = os.path.join(parent_path, obj)
             if os.path.isdir(obj_path): # is a directory/folder
                 folder_count += 1
                 _line += 'd  ' + obj_path
             else: # is a file
                 file_count += 1
                 _line += '-  ' + obj_path + ' (size = {} byte)'.format(format_number_kilo_by_kilo(int(os.path.getsize(obj_path))))
-            print(_line)        
-        folder_c, file_c = search_dir(reg_ex, obj_path)
-        folder_count += folder_c
-        file_count += file_c
+            print(_line)
+        if os.path.isdir(obj_path):      
+            folder_c, file_c = search_dir(reg_ex, obj_path)
+            folder_count += folder_c
+            file_count += file_c
     return folder_count, file_count
 
 __author = 'Rei-Chi Lin'
