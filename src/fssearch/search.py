@@ -7,13 +7,13 @@
  * 
 """
 
-from curses.ascii import isdigit
 import os
 import re
+
 if __name__ != '__main__':
     from fssearch.format_number import format_number_kilo_by_kilo
 
-__version_code = '1.2.0' # version code
+__version_code = '1.3.0' # version code
 
 def version():
     return __version_code
