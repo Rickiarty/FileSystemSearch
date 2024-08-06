@@ -1,0 +1,5 @@
+hash values of ver. 1.3.0 with SHA-256: 
+    Windows: 
+        ec58aaf6c8cfc679d9f8bdee4c408aff7723ed7f6ce816d665227445517e39ec
+    macOS: 
+        c78ac4be58747cb41f2438cbe43b9e3834799a5cff70f2c379025995afc3b04f
