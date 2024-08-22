@@ -3,5 +3,5 @@ hash values of ver. 1.3.0 with SHA-256:
         ec58aaf6c8cfc679d9f8bdee4c408aff7723ed7f6ce816d665227445517e39ec
     macOS: 
         c78ac4be58747cb41f2438cbe43b9e3834799a5cff70f2c379025995afc3b04f
-	RaspberryOS on arm64:
-		cd47577f4fe49cae70c713bf0ae76df79074f71a67954b6be23bcf93f1f4e5b1
+    RaspberryOS on arm64:
+	cd47577f4fe49cae70c713bf0ae76df79074f71a67954b6be23bcf93f1f4e5b1
