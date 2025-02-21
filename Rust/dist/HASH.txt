@@ -1,0 +1,7 @@
+hash values of ver. 1.3.0 with SHA-256: 
+    Windows: 
+        e4f16007ec018f0269e4b7ef4338a392e166a7323c8a14ffe0e559cace691d53
+    macOS: 
+		x
+    RaspberryOS on arm64:
+		x
